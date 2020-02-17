@@ -1,4 +1,10 @@
 # Shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias d="cd ~/Development"
+alias g="git"
+
+
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -ahlF --color --group-directories-first"
@@ -15,11 +21,11 @@ alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
 
 # Docker
-#alias dstop="docker stop $(docker ps -a -q)"
-#alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
-#alias dpurgeimages="docker rmi $(docker images -q)"
-#dbuild() { docker build -t=$1 .; }
-#dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+alias dstop="docker stop $(docker ps -a -q)"
+alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
+alias dpurgeimages="docker rmi $(docker images -q)"
+dbuild() { docker build -t=$1 .; }
+dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 
 # Git
 alias commit="git add . && git commit -m"
