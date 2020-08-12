@@ -41,3 +41,14 @@ alias resolve="git add . && git commit --no-edit"
 alias gl="git log --oneline --decorate --color"
 alias gnuke="git clean -df && git reset --hard"
 
+
+
+# Bidx
+alias bidx="cd ~/Development/BidxDev/bidx"
+alias bidopener="cd ~/Development/BidxDev/bidx-x509bidopener"
+alias digitalid="cd ~/Development/BidxDev/bidx-x509digitalidcreator"
+alias bidxmysql="docker exec -it bidx_mysql mysql -uwebapp -p6TpXVNMvm0pa2c33qvBk"
+alias bidxssh="docker exec -it bidx /bin/bash"
+alias bidxup="pushd ~/Development/BidxDev/bidx; docker-compose up -d; popd"
+alias bidxdown="pushd ~/Development/BidxDev/bidx; docker-compose down; popd"
+alias bidxrestart="pushd ~/Development/BidxDev/bidx; docker-compose restart; popd"
