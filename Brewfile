@@ -33,6 +33,7 @@ brew 'yarn'
 brew 'python3'
 
 # Apps
+cask 'iterm2'
 cask 'alfred'
 cask 'docker'
 cask 'dropbox'
@@ -45,6 +46,8 @@ cask 'insomnia'
 cask 'sequel-pro'
 cask 'slack'
 cask 'there'
+cask 'visual-studio-code'
+cask 'spotify'
 
 # Quicklook
 cask 'qlcolorcode'
