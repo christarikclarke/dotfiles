@@ -5,7 +5,7 @@ export DOTFILES=$HOME/.dotfiles/christclarke/
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/christopher.clarke/.oh-my-zsh"
+export ZSH="/Users/christopherclarke/.oh-my-zsh"
 
 # Theme
 export MNML_INSERT_CHAR="$"
@@ -16,7 +16,7 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="pygmalion"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -59,6 +59,9 @@ ZSH_THEME="pygmalion"
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Stop admin group issue
+ZSH_DISABLE_COMPFIX=true
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -110,9 +113,11 @@ export LANG=en_US.UTF-8
 
 # Custom
 
-
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/sbin:$PATH"
+
+# GO
+export PATH=$(go env GOPATH)/bin:${PATH}
