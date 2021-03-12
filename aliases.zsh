@@ -42,22 +42,6 @@ alias resolve="git add . && git commit --no-edit"
 alias gl="git log --oneline --decorate --color"
 alias gnuke="git clean -df && git reset --hard"
 
-
-
-# Bidx
-alias bidx="cd ~/Development/Bidx/bidx"
-alias bidopener="cd ~/Development/Bidx/bidx-x509bidopener"
-alias bidxdid="cd ~/Development/Bidx/bidx-x509digitalidcreator"
-alias bidxui="cd ~/Development/Bidx/bidx-ui"
-alias bidxgraphql="cd ~/Development/Bidx/bidx-graphql"
-alias bidxmysql="docker exec -it bidx_mysql mysql -uwebapp -p6TpXVNMvm0pa2c33qvBk"
-alias bidxssh="docker exec -it bidx /bin/bash"
-alias bidxup="pushd ~/Development/Bidx/bidx; docker-compose up -d; popd"
-alias bidxdown="pushd ~/Development/Bidx/bidx; docker-compose down; popd"
-alias bidxrestart="pushd ~/Development/Bidx/bidx; docker-compose restart; popd"
-alias bidxuiup="pushd ~/Development/Bidx/bidx-ui; docker-compose up -d; popd"
-alias bidxuidown="pushd ~/Development/Bidx/bidx-ui; docker-compose down; popd"
-alias bidxuirestart="pushd ~/Development/Bidx/bidx-ui; docker-compose restart; popd"
-alias bidxgraphup="pushd ~/Development/Bidx/bidx-graphql; docker-compose up -d; popd"
-alias bidxgraphdown="pushd ~/Development/Bidx/bidx-graphql; docker-compose down; popd"
-alias bidxgraphrestart="pushd ~/Development/Bidx/bidx-graphql; docker-compose restart; popd"
+# Python
+alias pip=pip3
+alias python=/usr/local/bin/python3
