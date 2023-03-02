@@ -31,6 +31,8 @@ brew 'node'
 brew 'nvm'
 brew 'yarn'
 brew 'python3'
+brew 'mysql-client'
+brew 'postgresql'
 
 # Apps
 cask 'iterm2'
